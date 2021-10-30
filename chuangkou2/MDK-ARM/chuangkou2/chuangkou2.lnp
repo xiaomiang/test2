@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"chuangkou2\startup_stm32f103xe.o"
+"chuangkou2\main.o"
+"chuangkou2\gpio.o"
+"chuangkou2\sys.o"
+"chuangkou2\usart.o"
+"chuangkou2\stm32f1xx_it.o"
+"chuangkou2\stm32f1xx_hal_msp.o"
+"chuangkou2\stm32f1xx_hal_gpio_ex.o"
+"chuangkou2\stm32f1xx_hal_tim.o"
+"chuangkou2\stm32f1xx_hal_tim_ex.o"
+"chuangkou2\stm32f1xx_hal_uart.o"
+"chuangkou2\stm32f1xx_hal.o"
+"chuangkou2\stm32f1xx_hal_rcc.o"
+"chuangkou2\stm32f1xx_hal_rcc_ex.o"
+"chuangkou2\stm32f1xx_hal_gpio.o"
+"chuangkou2\stm32f1xx_hal_dma.o"
+"chuangkou2\stm32f1xx_hal_cortex.o"
+"chuangkou2\stm32f1xx_hal_pwr.o"
+"chuangkou2\stm32f1xx_hal_flash.o"
+"chuangkou2\stm32f1xx_hal_flash_ex.o"
+"chuangkou2\stm32f1xx_hal_exti.o"
+"chuangkou2\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "chuangkou2\chuangkou2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "chuangkou2.map" -o chuangkou2\chuangkou2.axf
